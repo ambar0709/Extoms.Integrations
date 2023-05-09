@@ -2,9 +2,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Extoms.Integrations.Controllers
 {
-    [ApiController]
-    [Route("[controller]")]
-    public class IntegrationController : ControllerBase
+    [Route("integration")]
+    public class IntegrationController : BaseApiController
     {
         private readonly ILogger<IntegrationController> _logger;
 
