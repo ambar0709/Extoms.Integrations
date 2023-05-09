@@ -4,13 +4,13 @@ namespace Extoms.Integrations.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class WeatherForecastController : ControllerBase
+    public class IntegrationController : ControllerBase
     {
-        private readonly ILogger<WeatherForecastController> _logger;
+        private readonly ILogger<IntegrationController> _logger;
 
         private readonly IConfiguration _configuration;
 
-        public WeatherForecastController(IConfiguration configuration, ILogger<WeatherForecastController> logger)
+        public IntegrationController(IConfiguration configuration, ILogger<IntegrationController> logger)
         {
             this._configuration = configuration;
             this._logger = logger;
